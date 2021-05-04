@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./JQFile.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./JQStyle.css">
+</head>
+<body>
+    <div id="form">
+    <form name="forms">
+        <div class="form-group row">
+          <label for="input" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="inputName" id="inputName" maxlength="10" placeholder="enter the name" >
+          </div>
+        </div>
+      <br>
+        <div id="checkGender" class="form-check form-check-inline">
+            Gender: &nbsp; &nbsp; &nbsp; 
+           <input type="radio" name="gender" value="male">male</input>&nbsp;&nbsp;&nbsp;
+           <input type="radio" name="gender" value="female">female</input>
+           </div>
+
+          <br> <br>
+          <div class="form-group row">
+            <label for="input" class="col-sm-2 col-form-label">Age</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputAge" name="inputAge" min="0" max="50">
+            </div>
+          </div>
+          <br> 
+
+          <div id="Selectcity">
+          <label for="City">City: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+          <select id="city">
+            <option value="Peshawar">Peshawar</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Quetta">Quetta</option>
+          </select> 
+          </div>
+        
+      
+      <br>
+      <div id="button">
+      
+        <button type="button" class="btn btn-info" id="addbtn">add</button>
+      </div>
+        <!-- <input type = "submit" value ="add" id="addbtn" /> -->
+    </form>
+      <!--   <table>
+            <tr>
+                <td>Name:  &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" placeholder="Enter the name"> </td>
+                <td><input type="radio"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table> -->
+    </div>
+    
+    <div id="server">
+      <table border="1" class="tbl">
+        <tbody>
+        <th>
+          <tr> 
+            <td>Name</td>
+            <td>Gender</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Actions</td>
+       </tr>
+      </th>
+        
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
